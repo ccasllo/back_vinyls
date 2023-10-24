@@ -1,0 +1,6 @@
+
+> vinyls-backend-miso@1.0.0 start /home/carlos/Documentos/Maestria/Semestre2_Ciclo2/BackVynils
+> nest start
+
+Found 587 error(s).
+
