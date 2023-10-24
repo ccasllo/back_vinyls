@@ -1,20 +1,16 @@
 {
-    "type": "postgres",
-    "host": "localhost",
-    "port": 5432,
-    "username": "postgres",
-    "password": "postgres",
-    "database": "vinyls",
-    "synchronize": false,
+    "type": "sqlite",
+    "database": "data/database.sqlite", // Ruta al archivo de base de datos SQLite
+    "synchronize": true, // ADVERTENCIA: Synchronize true solo para desarrollo
     "logging": false,
     "entities": [
-        "src/**/*entity.ts"
+        "dist/**/*.entity.js" // Cambiar a .js si estás utilizando TypeScript
     ],
     "migrations": [
-        "src/migration/**/*.ts"
+        "dist/migration/**/*.js" // Cambiar a .js si estás utilizando TypeScript
     ],
     "subscribers": [
-        "src/subscriber/**/*.ts"
+        "dist/subscriber/**/*.js" // Cambiar a .js si estás utilizando TypeScript
     ],
     "cli": {
         "entitiesDir": "src/",

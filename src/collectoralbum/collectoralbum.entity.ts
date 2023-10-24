@@ -12,7 +12,7 @@ export class CollectorAlbum {
     price: number;
 
     @Column({
-        type: "enum",
+        type: "text",
         enum: ALBUM_STATUS
     })
     status: ALBUM_STATUS
